@@ -1,0 +1,67 @@
+body {
+    background-image: url('ocean.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    font-size: 2em;
+    color: #3ca3b1;
+    font-family: 'Harlow Solid';
+    background-color: rgba(128, 128, 128, 0.85);
+    padding: 1px 50px; 
+    border-radius: 10px;
+    border: 3px solid #14fcfc;
+    margin: 0; 
+}
+
+h4 {
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+    font-family: 'Rage';
+    background-color: rgba(128, 128, 128, 0.85);
+    padding: 1px 5px;
+    border-radius: 10px;
+    border: 2px solid #14fcfc;
+    margin: 0;
+}
+
+#CoverArt {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 150px 0 10px 0;
+    border: 3px solid #14fcfc;
+}
+
+main input#query {
+    width: 250%; 
+    height: 50%; 
+    font-size: 1.3em; 
+    margin: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+    main input, main button {
+        margin: 5px;
+    }
+
+#searchResults, #time {
+    visibility: hidden;
+}

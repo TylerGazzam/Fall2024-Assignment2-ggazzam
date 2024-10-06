@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sailfish Search</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/themes/smoothness/jquery-ui.css" integrity="sha384-AUxBc4TYOEuk4Hp24650vW1R1zXkuFE8IK5cgdi5qyXRKuc1Xx2ndBiefujL0Qho" crossorigin="anonymous">
+</head>
+
+<body>
+    <img id="CoverArt" src="Sailfish.jpg" alt="Cover Art">
+    <header id="searchEngineName">
+        <h1>Sailfish Search</h1>
+
+    </header>
+    <h4>"Fastest in the Seven Seas!"</h4>
+    <main>
+        <input type="text" id="query" placeholder="Enter your Sailfish-Search query">
+        <button type="button" id="searchButton">Search</button>
+        <button type="button" id="luckyButton">I'm Feeling Lucky</button>
+        <button type="button" id="timeButton">Show Current Time</button>
+        <div id="currentTime"></div>
+        <div id="searchResults"></div>
+        <div id="time"></div>
+    </main>
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js" integrity="sha384-8EM386r8XMMzwGPUxfGNr6c1wIOYnPQBJ6VFxzKCZeklpQarHoZGB40kdNDA3gYr" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('searchButton').addEventListener('click', apiSearch);
+        document.getElementById('luckyButton').addEventListener('click', feelingLucky);
+        document.getElementById('timeButton').addEventListener('click', showCurrentTime);
+        document.getElementById('searchEngineName').addEventListener('click', changeBackgroundImage);
+    </script>
+</body>
+
+</html>
